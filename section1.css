@@ -1,0 +1,334 @@
+/* Pre-loading logic */
+
+.loading-container {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color:#998675;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    -moz-animation: cssAnimation 0s ease-in 3s forwards;
+    /* Firefox */
+    -webkit-animation: cssAnimation 0s ease-in 3s forwards;
+    /* Safari and Chrome */
+    -o-animation: cssAnimation 0s ease-in 3s forwards;
+    /* Opera */
+    animation: cssAnimation 0s ease-in 3s forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@keyframes cssAnimation {
+    to {
+        width: 0;
+        height: 0;
+        overflow: hidden;
+    }
+}
+
+@-webkit-keyframes cssAnimation {
+    to {
+        width: 0;
+        height: 0;
+        visibility: hidden;
+    }
+}
+.loading-container img {
+    display: block;
+    margin: auto;
+    margin-top: calc(50vh - 64px);
+}
+/* End pre-loading logic */
+
+
+.s1 {
+    width: 100%;
+    height: 100%;
+    background-image: url(./icons/pexels-pixabay-417173.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    opacity: 0.7;
+   
+    
+}
+header {
+    width: 100%;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+.name {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 200px;
+    color: white;
+    font-size: 30px;
+}
+.wrap {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-around;
+    width: 700px;
+    float: right;
+    color: white;
+    font-size: 15px;
+}
+.header {
+    font-size: 13px;
+    font-family: "Montserrat", sans-serif;
+    display: inline-flex;
+}
+.header a {
+    color: #fff;
+    text-decoration: none;
+}
+.header a:hover {
+ color: #c7b299;
+}
+
+.center {
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+.n1 {
+    font-family: "Raleway", sans-serif;
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 14px;
+}
+.n2s {
+    color: #ffffff;
+    font-family: "Raleway", sans-serif;
+    font-size: 52px;
+    font-weight: 600;
+    margin-bottom: 19px;
+}
+.n3 {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 24px;
+}
+.contanier-btn{
+    margin-top: 70px;
+    height: 65px;
+    width: 100%;
+    transition: 2s;
+}
+.contanier-btn:hover{
+    transform:scale(1.1);
+}
+.btn1 {
+       border-radius: 3px;
+        background-color: #998675;
+        font-family: "Raleway", sans-serif;
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 23px;
+        text-transform: uppercase;
+        padding: 15px 50px;
+        border: none;
+        outline: none;
+}
+.center-circle {
+    display: flex;
+    justify-items: center;
+    gap: 10px;
+    margin-top: calc((100vh - 450px)/2 - 20px);
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 30px;
+}
+.circle {
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 100%;
+    border: 1px solid white;
+    width: 10px;
+    height: 10px;
+    background-color: #6e6c69;
+    transition: 1s;
+}
+.circle:hover {
+   background-color: transparent;
+  transform: scale(1.1);
+}
+.top-menu {
+    z-index: 30;
+    width: 60%;
+    margin: auto;
+}
+.s1 .logo {
+    display: inline-block;
+    width: 150px;
+    height: 80px;
+    overflow: hidden;
+}
+.s1 .logo img {
+    width: 200px;
+    overflow: hidden;
+    margin: -30px;
+}
+.header-content {
+    width: 60%;
+    margin: auto;
+    margin-top: calc((100vh - 450px)/2);
+}
+.arrow {
+    position: absolute;
+    display: flex;
+    right: 40px;
+    top: 50%;
+}
+
+.arrow-left {
+    display: flex;
+    position: absolute;
+    left: 40px;
+    top: 50%;
+}
+.arrow {
+    transform: rotate(180deg);
+}
+.arrow, .arrow-left {
+    width: 50px;
+    height: 50px;
+}
+@media (max-width: 1460px) {
+    .top-menu {
+        width: 80%;
+    }
+}
+@media (max-width: 1200px) {
+    .header-content {
+        width: 80%;
+    }
+    .top-menu {
+        width: 100%;
+    }
+}
+@media (max-width: 860px) {
+    .top-menu .logo {
+        display: none;
+    }
+}
+@media (max-width: 800px) {
+    .header-content {
+        width: 100%;
+    }
+    .arrow,
+    .arrow-left {
+        display: none;
+    }
+}
+@media (max-height: 500px) {
+    .n1 {
+        font-size: 27px;
+        margin-bottom: 14px;
+    }   
+
+    .n2s {
+        font-size: 39px;
+        margin-bottom: 19px;
+    }
+    .header-content {
+        margin-top: calc((100vh - 250px)/2);
+    }
+}
+@media (max-height: 450px) {
+    .contanier-btn {
+        margin-top: 20px;
+    }
+}
+.nav-up img, .nav-down img {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    z-index: 30;
+}
+.nav-up img {
+    transform: rotate(180deg);
+}
+.nav-up img {
+    bottom: 70px;
+    right: 10px;
+}
+.nav-down img {
+    bottom: 10px;
+    right: 10px;
+}
+
+
+/* Burger menu logic */
+#menu,
+#menu-label {
+    display: none;
+}
+#menu-label img {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 20;
+}
+@media (max-width: 860px) {
+    #menu-list {
+        position: fixed;
+        top: 0px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left: 0;
+        margin-right: 0;
+        background-color: white;
+        border: #000 1px solid;
+        border-radius: 3px;
+        z-index: 30;
+        width: 100%;
+    }
+    #menu-list .header a {
+        color: #000;
+    }
+    #menu-label {
+        text-align: right;
+        display: block;
+        padding: 0.5em;
+        line-height: 1.6em;
+        align-self: center;
+    }
+    #menu-list {
+        display: block;
+    }
+    #menu-list:last-child {
+        width: 100%;
+        flex-basis: 100%;
+    }
+    #menu-list div {
+        display: inline-block;
+        margin-bottom: 0;
+        width: 100%;
+        text-align: center;
+        padding: 0.5em;
+    }
+    #menu:not(:checked)+#menu-label {
+        display: none;
+    }
+    #menu:not(:checked)+#menu-list{
+        display: none;
+    }
+    #menu-list .header.search {
+        display: none;
+    }
+}
+/* End burger menu logic */

@@ -1,0 +1,62 @@
+.contanier-icons {
+background-image: linear-gradient(to right, #211b19 0%, #4e3427 100%);
+width: 100%;
+margin-top: 4px;
+padding-top: 30px;
+padding-bottom: 30px;
+}
+.s7 {
+    display: inline-block;
+}
+.icons-stats {
+    display: block;
+    text-align: center;
+    width: 60%;
+    margin: auto;
+}
+.s7 p {
+    text-align: center;
+}
+.achivement-count, 
+.achivement-description,
+.achivement-dash {
+    width: 100%;
+    color: white;
+}
+.achivement-count {
+    font-size: 36px;
+}
+.achivement-description {
+    font-size: 12px;
+    margin-top: -30px;
+}
+.achivement-dash {
+    font-size: 48px;
+    margin-top: -40px;
+}
+.s7 .svg {
+    display: inline-block;
+    text-align: center;
+}
+@media (max-width: 1200px) {
+    .icons-stats {
+        width: 80%;
+    }
+}
+@media (max-width: 1000px) {
+    .icons-stats {
+        width: 100%;
+    }
+}
+@media (max-width: 600px) {
+    .icons-stats {
+        display: block;
+        float: left;
+        margin: auto;
+    }
+}
+.icons-flex {
+    display: inline-block;
+    width: 125px;
+}
+

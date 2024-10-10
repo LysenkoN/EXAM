@@ -1,0 +1,51 @@
+.video {
+    /* background-image: url(./icons/wacom-one-tablet-gsp-m.jpg); */
+    width: 100%;
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    margin-top: 30px;
+    position: relative;
+}
+video {
+    display: block;
+    object-fit: fill;
+    width: 100%;
+}
+.video-text-img img {
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}
+.video-text-block {
+    display: block;
+    z-index: 5;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    margin: auto;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.video-text1, .video-text2 {
+    color: white;
+}
+.video-text1 {
+    font-size: 24px;
+}
+
+.video-text2 {
+    font-size: 16px;
+}
+@media (max-width: 800px) {
+    .video-text-img img {
+        width: 50px;
+        height: 50px;
+    }
+    .video-text1 {
+        font-size: 16px;
+    }
+    .video-text2 {
+        font-size: 10px;
+    }
+}

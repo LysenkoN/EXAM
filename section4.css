@@ -1,0 +1,98 @@
+.gallery {
+    display: flex;
+    width: 100%;
+}
+.gallery-blog {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    margin: auto;
+    margin-top: 40px;
+ 
+}
+
+.block-photo:hover .img-background {
+    filter:brightness(0.5);
+}
+.block-photo:hover .photo-text {
+    background-color: #252525;
+}
+.block-photo {
+    display: flex;
+    flex-direction: column;
+    transition: 500ms;
+}
+
+.photo-text {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: #fbfaf8;
+    padding: 25px;
+    -webkit-transition: 500ms ease;
+    transition: 500ms ease;
+    margin-top: -2px;
+}
+
+.photo-text1 {
+    color: #c7b299;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 14px;
+}
+
+.photo-text2 {
+    color: #d1d1d1;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+
+}
+.hoover-block {
+    display: flex;
+    position: absolute;
+    margin-left: 150px;
+    margin-top: 105px;
+    display: none;
+    transition: 500ms;
+}
+.block-photo:hover .hoover-block {
+    display: flex;
+
+}
+.photo-btn {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+.button-photo {
+    border-radius: 3px;
+    background-color: #998675;
+    font-family: "Raleway", sans-serif;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 23px;
+    text-transform: uppercase;
+    padding: 15px 50px;
+    border: none;
+    outline: none;
+    margin-top: 20px;
+    transition: 500ms;   
+}
+.button-photo:hover {
+    transform: scale(1.1);
+}
+@media (max-width: 500px) {
+    .gallery-blog {
+        width: 100%;
+    }
+    .block-photo {
+        width: calc(100% - 40px);
+    }
+}

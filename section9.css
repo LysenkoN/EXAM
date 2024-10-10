@@ -1,0 +1,20 @@
+.logos-bg {
+    background-image: url(./icons/photo\ bg.jpg);
+    padding: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter:opacity(0.7);
+}
+.contanier-logos {
+    height: 100%;
+}
+.logos-item {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100%;
+}
